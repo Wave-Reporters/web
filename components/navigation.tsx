@@ -13,7 +13,7 @@ export function Navigation() {
             <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <h1 className="font-mono text-sm font-bold tracking-widest text-foreground uppercase">
-                        WAVE REPORT
+                        WAVE REPORTER
                     </h1>
                 </div>
             </div>
