@@ -17,7 +17,7 @@ export function Navigation() {
                     </h1>
                 </div>
                 <div className="flex items-center gap-2.5 font-mono text-[10px]">
-                    <Link href={process.env.NEXT_PUBLIC_QUESTION} target="_blank"
+                    <Link href={process.env.NEXT_PUBLIC_QUESTION || ""} target="_blank"
                           rel="noopener noreferrer">
                         <CircleQuestionMark className="w-5 h-5" color={'#e91e8c'}/>
                     </Link>
