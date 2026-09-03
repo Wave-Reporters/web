@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import {Navigation} from "@/components/common/navigation";
 import {Metadata} from "next";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager,GoogleAnalytics } from '@next/third-parties/google'
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
 
 const fontMono = Geist_Mono({
@@ -61,7 +61,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
       <html lang="ko">
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GA4 || ""} />
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_TAG_MANAGER || ""} />
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA4 || ""} />
       <body>
       {/* 클라이언트 스토어 리셋 검사 */}
 
