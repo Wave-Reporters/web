@@ -58,9 +58,15 @@ export const metadata: Metadata = {
         follow: true,
     },
 };
+
+function GoogleTagManager(props: {}) {
+    return null;
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
       <html lang="ko">
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GA4} />
       <body>
       {/* 클라이언트 스토어 리셋 검사 */}
 
