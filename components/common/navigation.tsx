@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import {usePathname} from "next/navigation";
-import {useActStore} from "@/store/use-act-stroe";
 import {TABS} from "@/lib/types";
-import {CircleQuestionMark, MessageSquarePlus} from "lucide-react";
+import {CircleQuestionMark} from "lucide-react";
 
 export function Navigation() {
     const pathname = usePathname();
@@ -18,9 +17,10 @@ export function Navigation() {
                     </h1>
                 </div>
                 <div className="flex items-center gap-2.5 font-mono text-[10px]">
-                    <a href={process.env.NEXT_PUBLIC_QUESTION}>
-                        <CircleQuestionMark className="w-5 h-5" color={'#e91e8c'} />
-                    </a>
+                    <Link href={process.env.NEXT_PUBLIC_QUESTION} target="_blank"
+                          rel="noopener noreferrer">
+                        <CircleQuestionMark className="w-5 h-5" color={'#e91e8c'}/>
+                    </Link>
                 </div>
             </div>
 
