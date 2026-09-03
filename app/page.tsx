@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import {useActStore} from "@/store/use-act-stroe";
 import {Tab} from "@/lib/types";
-import {DashboardTab} from "@/components/dashboard-tab";
+import {DashboardTab} from "@/components/dashboard/dashboard-tab";
 
 export default function Page() {
   const router = useRouter();

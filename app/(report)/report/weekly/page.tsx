@@ -1,5 +1,5 @@
 import {Metadata} from "next";
-import WeeklyPage from "@/components/client-page/WeeklyPage";
+import ActPageContainer from "@/components/act/act-page-container";
 
 
 export const metadata: Metadata = {
@@ -11,7 +11,5 @@ export const metadata: Metadata = {
     },
 };
 export default function Page() {
-    return (
-        <WeeklyPage/>
-    );
+    return <ActPageContainer type="weekly"/>;
 }

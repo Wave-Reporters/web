@@ -12,7 +12,10 @@ interface ActState {
     toggle: (id: string) => void;
     handleAdd: (act: Act) => void;
     deleteAct:(id:string) => void;
+    updateAct: (updatedAct: Act) => void;
     checkAndReset: () => void;
+    checkAll: (ids: string[]) => void;
+    unCheckAll:(ids:string[]) => void;
 }
 
 
@@ -32,7 +35,22 @@ export const useActStore = create<ActState>()(
                         [id]: !state.checked[id],
                     },
                 })),
-
+            checkAll: (ids) =>
+                set((state) => {
+                    const nextChecked = { ...state.checked };
+                    ids.forEach((id) => {
+                        nextChecked[id] = true;
+                    });
+                    return { checked: nextChecked };
+                }),
+            unCheckAll: (ids: string[]) =>
+                set((state) => {
+                    const nextChecked = { ...state.checked };
+                    ids.forEach((id) => {
+                        delete nextChecked[id]; // 또는 nextChecked[id] = false;
+                    });
+                    return { checked: nextChecked };
+                }),
             handleAdd: (act: Act) =>
                 set((state) => ({
                     dailyActs: act.type === "daily" ? [...state.dailyActs, act] : state.dailyActs,
@@ -44,7 +62,15 @@ export const useActStore = create<ActState>()(
                     dailyActs: state.dailyActs.filter((act) => act.id !== id),
                     weeklyActs: state.weeklyActs.filter((act) => act.id !== id),
                 })),
-
+            updateAct: (updatedAct: Act) =>
+                set((state) => ({
+                    dailyActs: updatedAct.type === "daily"
+                        ? state.dailyActs.map((act) => (act.id === updatedAct.id ? updatedAct : act))
+                        : state.dailyActs,
+                    weeklyActs: updatedAct.type === "weekly"
+                        ? state.weeklyActs.map((act) => (act.id === updatedAct.id ? updatedAct : act))
+                        : state.weeklyActs,
+                })),
             // UTC 00시 기준 초기화 검사 함수
             checkAndReset: () => {
                 const { checked, dailyActs, weeklyActs, lastDailyReset, lastWeeklyReset } = get();

@@ -1,5 +1,5 @@
 import {Metadata} from "next";
-import DailyPage from "@/components/client-page/DailyPage";
+import ActPageContainer from "@/components/act/act-page-container";
 
 export const metadata: Metadata = {
     title: "일일 행동 | WAVE REPORTER",
@@ -11,7 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-    return (
-        <DailyPage/>
-    );
+    return <ActPageContainer type="daily" />;
 }
