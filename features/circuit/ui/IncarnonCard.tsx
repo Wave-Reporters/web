@@ -7,6 +7,7 @@ const TIER_COLORS: Record<IncarnonWeapon['tier'], string> = {
     A: 'bg-orange-500 text-white border-orange-600',
     B: 'bg-yellow-400 text-black border-yellow-500',
     C: 'bg-gray-500 text-white border-gray-600',
+    D: 'bg-background-400 text-white border-gray-600',
 };
 
 function IncarnonCard({weapon}: { weapon: IncarnonWeapon }) {
