@@ -109,7 +109,7 @@ export const useActStore = create<ActState>()(
             },
         }),
         {
-            name: "act-storage",
+            name: "act-storage-2",
             storage: createJSONStorage(() => localStorage),
             // persist 복원 완료 후 실행되는 콜백
             onRehydrateStorage: () => (state) => {
