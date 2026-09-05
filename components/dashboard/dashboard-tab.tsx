@@ -6,6 +6,7 @@ import {Badge} from "@/components/ui/badge";
 import {Act, ACT_COLOR_TEXT_COLOR, Tab} from "@/lib/types";
 import {useDailyCountdown} from "@/hooks/use-daily-countdown";
 import Link from "next/link";
+import CircuitDashBoard from "@/features/circuit/ui/CircuitDashBoard";
 
 interface DashboardTabProps {
     dailyActs: Act[];
@@ -60,7 +61,7 @@ export function DashboardTab({dailyActs, weeklyActs, checked, onNavigate}: Dashb
                     </div>
                 </CardContent>
             </Card>
-
+            <CircuitDashBoard/>
             {/* Progress Cards */}
             {sections.map((s) => {
                 const pct = s.total > 0 ? Math.round((s.done / s.total) * 100) : 0;

@@ -25,6 +25,8 @@ export const metadata: Metadata = {
         "행동 트래커",
         "일일 행동",
         "주간 행동",
+        "워프레임 인카논",
+        "Warframe incarnon",
         "Daily Acts",
         "Weekly Acts",
     ],
@@ -47,8 +49,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "WAVE REPORTER — 사이버 텍 행동 & 태스크 트래커",
-        description: "일일·주간 행동 목표 완수를 위한 최적의 사이버 트래커.",
+        title: "WAVE REPORTER — 워프레임 체크리스트",
+        description: "일일·주간 행동 목표 완수를 위한 체크리스트.",
         images: ["/og-image.png"],
     },
     robots: {
