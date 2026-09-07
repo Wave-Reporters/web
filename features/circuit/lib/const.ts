@@ -40,9 +40,9 @@ export const circuitRotation:IncarnonRotationData = {
             "weapons": [
                 { "id": "boar", "name_kr": "보어", "name_en": "Boar", "category": "Primary", "tier": "A", "variants": ["Boar", "Boar Prime"] },
                 { "id": "gammacor", "name_kr": "감마코어", "name_en": "Gammacor", "category": "Secondary", "tier": "D", "variants": ["Gammacor", "Synoid Gammacor"] },
-                { "id": "angstrum", "name_kr": "앙스트럼", "name_en": "Angstrum", "category": "Secondary", "tier": "A", "variants": ["Angstrum", "Prisma Angstrum"] },
+                { "id": "anku", "name_kr": "안쿠", "name_en": "Anku", "category": "Melee", "tier": "C", "variants": ["Anku"] },
                 { "id": "gorgon", "name_kr": "고르곤", "name_en": "Gorgon", "category": "Primary", "tier": "D", "variants": ["Gorgon", "Gorgon Wraith", "Prisma Gorgon"] },
-                { "id": "anku", "name_kr": "안쿠", "name_en": "Anku", "category": "Melee", "tier": "C", "variants": ["Anku"] }
+                { "id": "angstrum", "name_kr": "앙스트럼", "name_en": "Angstrum", "category": "Secondary", "tier": "A", "variants": ["Angstrum", "Prisma Angstrum"] },
             ]
         },
         {
