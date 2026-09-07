@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
-import { Act, DEFAULT_DAILY, DEFAULT_WEEKLY } from "@/lib/types";
+import {Act, ActType, DEFAULT_DAILY, DEFAULT_WEEKLY} from "@/lib/types";
 import {getUTCTodayTimestamp, getUTCWeeklyResetTimestamp, removeCheckedActs} from "@/lib/utils";
 
 interface ActState {
@@ -16,6 +16,7 @@ interface ActState {
     checkAndReset: () => void;
     checkAll: (ids: string[]) => void;
     unCheckAll:(ids:string[]) => void;
+    reorderActs: (type: ActType, newActs: Act[]) => void;
 }
 
 
@@ -70,6 +71,11 @@ export const useActStore = create<ActState>()(
                     weeklyActs: updatedAct.type === "weekly"
                         ? state.weeklyActs.map((act) => (act.id === updatedAct.id ? updatedAct : act))
                         : state.weeklyActs,
+                })),
+            reorderActs: (type, newActs) =>
+                set((state) => ({
+                    dailyActs: type === "daily" ? newActs : state.dailyActs,
+                    weeklyActs: type === "weekly" ? newActs : state.weeklyActs,
                 })),
             // UTC 00시 기준 초기화 검사 함수
             checkAndReset: () => {

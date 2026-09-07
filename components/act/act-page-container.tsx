@@ -11,6 +11,7 @@ import {AddActDialog} from "@/components/act/add-act-dialog";
 import ActRowAddButton from "@/components/act/act-row-add-button";
 import CategoryFilter from "@/components/act/act-page-container-category";
 import {cn} from "@/lib/utils";
+import {SortableActRow} from "@/features/act/ui/sortable-act-row";
 
 interface CategoryButtonProps {
     children: ReactNode;
@@ -130,11 +131,12 @@ export default function ActPageContainer({ type }: ActPageContainerProps) {
                                 </div>
 
                                 {/* 해당 대분류의 Act 항목들 */}
-                                {actsGroup.map((act) => (
-                                    <ActRow
+                                {actsGroup.map((act,index) => (
+                                    <SortableActRow
                                         key={act.id}
-                                        type={type}
                                         act={act}
+                                        index={index}
+                                        type={type}
                                         checked={!!checked[act.id]}
                                         onToggle={() => toggle(act.id)}
                                         onDelete={() => handleDelete(act.id)}

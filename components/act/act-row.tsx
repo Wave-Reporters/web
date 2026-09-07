@@ -60,7 +60,7 @@ export function ActRow({ act, checked, onToggle, onDelete, onUpdate, type }: Act
         <>
             <div
                 className={cn(
-                    "group border-b border-border px-4 py-3 flex items-center gap-3 cursor-pointer transition-colors hover:bg-muted/50",
+                    "group px-4 py-3 flex items-center gap-3 cursor-pointer transition-colors hover:bg-muted/50",
                     checked && "opacity-60 bg-muted/20"
                 )}
                 onClick={onToggle}
