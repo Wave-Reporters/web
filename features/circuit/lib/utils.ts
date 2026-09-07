@@ -1,6 +1,6 @@
 export function getCurrentIncarnonWeek(now = new Date()): number {
     // 기준점: 2024년 1월 8일 월요일 09:00:00 KST (Week 1 시작일)
-    const EPOCH_DATE = new Date('2026-09-01T09:00:00+09:00');
+    const EPOCH_DATE = new Date('2026-08-31T09:00:00+09:00');
     const TOTAL_WEEKS = 9;
 
     // 기준점 이전 날짜 예외 처리
@@ -14,6 +14,7 @@ export function getCurrentIncarnonWeek(now = new Date()): number {
     // 밀리초를 '주(Week)' 단위로 변환
     const msInWeek = 7 * 24 * 60 * 60 * 1000;
     const passedWeeks = Math.floor(diffInMs / msInWeek);
+    console.log(diffInMs)
 
     // 1부터 9까지 순환하는 주차 계산
     const currentWeek = (passedWeeks % TOTAL_WEEKS) + 1;

@@ -38,7 +38,7 @@ export const circuitRotation:IncarnonRotationData = {
         {
             "week": 2,
             "weapons": [
-                { "id": "boar", "name_kr": "보어", "name_en": "Boar", "category": "Primary", "tier": "B", "variants": ["Boar", "Boar Prime"] },
+                { "id": "boar", "name_kr": "보어", "name_en": "Boar", "category": "Primary", "tier": "A", "variants": ["Boar", "Boar Prime"] },
                 { "id": "gammacor", "name_kr": "감마코어", "name_en": "Gammacor", "category": "Secondary", "tier": "D", "variants": ["Gammacor", "Synoid Gammacor"] },
                 { "id": "angstrum", "name_kr": "앙스트럼", "name_en": "Angstrum", "category": "Secondary", "tier": "A", "variants": ["Angstrum", "Prisma Angstrum"] },
                 { "id": "gorgon", "name_kr": "고르곤", "name_en": "Gorgon", "category": "Primary", "tier": "D", "variants": ["Gorgon", "Gorgon Wraith", "Prisma Gorgon"] },
@@ -48,7 +48,7 @@ export const circuitRotation:IncarnonRotationData = {
         {
             "week": 3,
             "weapons": [
-                { "id": "bo", "name_kr": "보", "name_en": "Bo", "category": "Melee", "tier": "A", "variants": ["Bo", "Mk1-Bo", "Bo Prime"] },
+                { "id": "bo", "name_kr": "보", "name_en": "Bo", "category": "Melee", "tier": "B", "variants": ["Bo", "Mk1-Bo", "Bo Prime"] },
                 { "id": "latron", "name_kr": "래트론", "name_en": "Latron", "category": "Primary", "tier": "S", "variants": ["Latron", "Latron Prime", "Latron Wraith"] },
                 { "id": "furis", "name_kr": "퓨리스", "name_en": "Furis", "category": "Secondary", "tier": "S", "variants": ["Furis", "Mk1-Furis"] },
                 { "id": "furax", "name_kr": "퓨랙스", "name_en": "Furax", "category": "Melee", "tier": "C", "variants": ["Furax", "Mk1-Furax", "Furax Wraith"] },
@@ -58,7 +58,7 @@ export const circuitRotation:IncarnonRotationData = {
         {
             "week": 4,
             "weapons": [
-                { "id": "lex", "name_kr": "렉스", "name_en": "Lex", "category": "Secondary", "tier": "B", "variants": ["Lex", "Lex Prime"] },
+                { "id": "lex", "name_kr": "렉스", "name_en": "Lex", "category": "Secondary", "tier": "A", "variants": ["Lex", "Lex Prime"] },
                 { "id": "magistar", "name_kr": "마기스타", "name_en": "Magistar", "category": "Melee", "tier": "S", "variants": ["Magistar", "Sancti Magistar"] },
                 { "id": "boltor", "name_kr": "볼터", "name_en": "Boltor", "category": "Primary", "tier": "C", "variants": ["Boltor", "Boltor Prime", "Telos Boltor"] },
                 { "id": "bronco", "name_kr": "브롱코", "name_en": "Bronco", "category": "Secondary", "tier": "C", "variants": ["Bronco", "Bronco Prime"] },
