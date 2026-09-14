@@ -77,8 +77,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           {/* Footer */}
           <footer className="border-t border-border mt-8 pt-4 pb-6 text-center">
-            <p className="font-mono text-[10px] text-muted-foreground/60 tracking-widest">
-            </p>
+              <div>
+                  <p className="font-mono text-[10px] text-muted-foreground/60 tracking-widest">
+                      면책 조항<br/>
+                      Digital Extremes Ltd, Warframe 및 Warframe 로고는 등록 상표입니다. 모든 권리는 전 세계적으로 보유됩니다. 이 사이트는 Digital Extremes Ltd 또는 Warframe과 공식적인 관계가 없습니다. 이러한 상표와 관련된 모든 삽화, 스크린샷, 캐릭터 또는 기타 인식 가능한 지적 재산은 마찬가지로 Digital Extremes Ltd의 소유입니다.
+                  </p>
+              </div>
           </footer>
         </main>
       </div>
