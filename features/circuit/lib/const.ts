@@ -48,8 +48,8 @@ export const circuitRotation:IncarnonRotationData = {
         {
             "week": 3,
             "weapons": [
-                { "id": "bo", "name_kr": "보", "name_en": "Bo", "category": "Melee", "tier": "B", "variants": ["Bo", "Mk1-Bo", "Bo Prime"] },
-                { "id": "latron", "name_kr": "래트론", "name_en": "Latron", "category": "Primary", "tier": "S", "variants": ["Latron", "Latron Prime", "Latron Wraith"] },
+                { "id": "bo", "name_kr": "보", "name_en": "Bo", "category": "Melee", "tier": "S", "variants": ["Bo", "Mk1-Bo", "Bo Prime"] },
+                { "id": "latron", "name_kr": "래트론", "name_en": "Latron", "category": "Primary", "tier": "B", "variants": ["Latron", "Latron Prime", "Latron Wraith"] },
                 { "id": "furis", "name_kr": "퓨리스", "name_en": "Furis", "category": "Secondary", "tier": "S", "variants": ["Furis", "Mk1-Furis"] },
                 { "id": "furax", "name_kr": "퓨랙스", "name_en": "Furax", "category": "Melee", "tier": "C", "variants": ["Furax", "Mk1-Furax", "Furax Wraith"] },
                 { "id": "strun", "name_kr": "스트런", "name_en": "Strun", "category": "Primary", "tier": "B", "variants": ["Strun", "Mk1-Strun", "Strun Prime", "Strun Wraith"] }
