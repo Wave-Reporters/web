@@ -45,9 +45,7 @@ export function DashboardTab({dailyActs, weeklyActs, checked, onNavigate}: Dashb
 
     return (
         <div className="space-y-4">
-            <DashBoardBannerContent
-                className="relative overflow-hidden p-6 bg-card border border-primary/20 rounded-xl">
-                {/* 1. 배경 바로 키티어 캐릭터 이미지 (우측 밀착 + 왼쪽으로 자연스러운 Fade) */}
+            <DashBoardBannerContent>
                 <Link className={'w-full'} href={TAB_OBJ.baro.href}>
                     <div
                         className="absolute top-0 right-0 h-full w-[220px] sm:w-[280px] pointer-events-none select-none">
