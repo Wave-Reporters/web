@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         default: "WAVE REPORTER — 워프레임 체크 리스트",
         template: "%s | WAVE REPORTER",
     },
-    description: "워프레임 일일 주간 체크리스트, 강철의 길 순환로 추천 리스트,바로 키 티어 아이템 목록 및 구매 추천 리스트",
+    description: "워프레임 일일 혹은 주간 체크리스트, 강철의 길 순환로 추천 리스트,바로 키 티어 아이템 목록 및 구매 추천 리스트",
     keywords: [
         "순환로",
         "강철의길 순환로",
