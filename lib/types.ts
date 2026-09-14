@@ -33,17 +33,18 @@ export const DEFAULT_WEEKLY: Act[] = [
     {id: "w1", type: "weekly", title: "아야탄 유물", desc: "",category: "기타"},
     {id: "w2", type: "weekly", title: "집정관 사냥 완료", desc: "샤드 파밍",category:"샤드"},
     {id: "w3", type: "weekly", title: "아르키메디아 완료", desc: "샤드 파밍" ,category: "샤드"},
-    {id: "w4", type: "weekly", title: "템포럴 아르키메디아 완료", desc: "샤드 파밍, 핫샷 파밍",category:"샤드"},
-    {id: "w5", type: "weekly", title: "새 3호 샤드 구매", desc: "",category:"샤드"},
-    {id: "w6", type: "weekly", title: "순환로 강길", desc: "인카논 파밍",category:"인카논"},
+    {id: "w4", type: "weekly", title: "심층 아르키메디아 완료", desc: "샤드 파밍, 핫샷 파밍",category:"샤드"},
+    {id: "w5", type: "weekly", title: "템포럴 아르키메디아 완료", desc: "샤드 파밍, 핫샷 파밍",category:"샤드"},
+    {id: "w6", type: "weekly", title: "새 3호 샤드 구매", desc: "",category:"샤드"},
+    {id: "w7", type: "weekly", title: "순환로 강길", desc: "인카논 파밍",category:"인카논"},
     {id: "w8", type: "weekly", title: "순환로 일반", desc: "얻기 힘든 워프레임 파밍",category:"워프레임 파밍"},
-    {id: "w7", type: "weekly", title: "나이트 웨이브 주간 미션 완료", desc: "",category:"기타"},
-    {id: "w9", type: "weekly", title: "하강 강길", desc: "샤드 파밍",category:"샤드"},
-    {id: "w13", type: "weekly", title: "1999 달력", desc: "샤드 파밍",category:"샤드"},
-    {id: "w10", type: "weekly", title: "칼 미션 완료하기", desc: "",category:"기타"},
+    {id: "w9", type: "weekly", title: "나이트 웨이브 주간 미션 완료", desc: "",category:"기타"},
+    {id: "w10", type: "weekly", title: "하강 강길", desc: "샤드 파밍",category:"샤드"},
+    {id: "w11", type: "weekly", title: "1999 달력", desc: "샤드 파밍",category:"샤드"},
+    {id: "w12", type: "weekly", title: "칼 미션 완료하기", desc: "",category:"기타"},
 
-    {id: "w11", type: "weekly", title: "테신 상점확인", desc: "",category:"상점 확인"},
-    {id: "w12", type: "weekly", title: "아이언 웨이크 상점확인", desc: "",category:"상점 확인"},
+    {id: "w13", type: "weekly", title: "테신 상점확인", desc: "",category:"상점 확인"},
+    {id: "w14", type: "weekly", title: "아이언 웨이크 상점확인", desc: "",category:"상점 확인"},
 ];
 
 export const PRESET_DAILY: Act[] = [
