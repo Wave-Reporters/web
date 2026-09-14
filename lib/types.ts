@@ -72,10 +72,24 @@ export const ACT_TEXT_COLOR_ORIGIN = {
     'weekly': 'text-accent border-accent',
 }
 
+
+export const TAB_OBJ = {
+    dashboard: {
+        label: "대시보드", href: "/", color: ACT_COLOR_TEXT_COLOR.daily
+    },
+    daily: {
+        label: "일일 행동", href: "/report/daily", color: ACT_COLOR_TEXT_COLOR.daily
+    },
+    weekly: {
+        label: "주간 행동", href: "/report/weekly", color: ACT_COLOR_TEXT_COLOR.weekly
+    },
+    baro: {
+        label: "키티어", href: "/baro/items", color: ACT_COLOR_TEXT_COLOR.daily
+    }
+}
+
 export const TABS = [
-    {label: "대시보드", href: "/", color: ACT_COLOR_TEXT_COLOR.daily},
-    {label: "일일 행동", href: "/report/daily", color: ACT_COLOR_TEXT_COLOR.daily},
-    {label: "주간 행동", href: "/report/weekly", color: ACT_COLOR_TEXT_COLOR.weekly},
+    TAB_OBJ.dashboard,TAB_OBJ.daily,TAB_OBJ.weekly,TAB_OBJ.baro
 ];
 
 export interface ActFormData {

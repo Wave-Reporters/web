@@ -11,5 +11,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-    return <ActPageContainer type="daily" />;
+    return (
+        <div className={'max-w-3xl mx-auto'}>
+            <ActPageContainer type="daily"/>
+        </div>
+    )
 }

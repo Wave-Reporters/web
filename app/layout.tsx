@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         default: "WAVE REPORTER — 워프레임 체크 리스트",
         template: "%s | WAVE REPORTER",
     },
-    description: "워프레임 일일 주간 체크리스트, 강철의 길 순환로 추천 리스트",
+    description: "워프레임 일일 주간 체크리스트, 강철의 길 순환로 추천 리스트,바로 키 티어 아이템 목록 및 구매 추천 리스트",
     keywords: [
         "순환로",
         "강철의길 순환로",
@@ -27,6 +27,8 @@ export const metadata: Metadata = {
         '워프레임 체크리스트',
         "워프레임 인카논",
         "Warframe incarnon",
+        "워프레임 보이드 상인",
+        "바로 키티어"
     ],
     authors: [{ name: "WAVE REPORTER Team" }],
     creator: "WAVE REPORTER",
@@ -71,9 +73,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navigation />
 
         {/* Page Content */}
-        <main className="max-w-3xl mx-auto px-4 py-5">
+        <main className="max-w-5xl mx-auto px-4 py-5">
           {children}
-
           {/* Footer */}
           <footer className="border-t border-border mt-8 pt-4 pb-6 text-center">
             <p className="font-mono text-[10px] text-muted-foreground/60 tracking-widest">
